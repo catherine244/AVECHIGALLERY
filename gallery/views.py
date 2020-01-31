@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Image,Category,Location.
 # Create your views here.
 def welcome(request):
     all_images = Image.objects.all()
