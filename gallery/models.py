@@ -24,6 +24,7 @@ class Category(models.Model):
     def save_category(self):
         self.save()
 
+
 class Image(models.Model):
     image_name = models.CharField(max_length =30)
     image_description = models.TextField()
@@ -34,7 +35,6 @@ class Image(models.Model):
     def __str__(self):
         return self.image_name
 
-   
     @classmethod
     def search_by_category(cls,search_term):
         search_result = cls.objects.filter(image_category__cat_name__icontains=search_term)
@@ -49,8 +49,8 @@ class Image(models.Model):
         self.save()
     def delete_image(self):
         self.delete()
+
         
-          
     @classmethod
     def retrieve_all(cls):
         all_objects = Image.objects.all()
@@ -66,5 +66,7 @@ class Image(models.Model):
     @classmethod
     def filter_by_location(cls,location):
         filtered_result = cls.objects.filter(image_location__location_name__icontains=location)
-        return filtered_result    
+        return filtered_result
+
+
 
