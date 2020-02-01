@@ -54,3 +54,13 @@ Use the command given below to run automated tests.
 
 
         python manage.py test gallery
+
+
+
+
+## TECHNOLOGIES USED 
+
+* [Django](https://www.djangoproject.com/) - web framework used
+* Javascript - For DOM(Document Object Manipulation) scripts
+* HTML - For building Mark Up pages/User Interface
+* CSS - For Styling User Interface
