@@ -14,11 +14,12 @@ li.dropdown:hover > .dropdown-menu {
     transition: 1s;
 }
 .colored-font{
-	background: #FF512F;
-	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
-	background: linear-gradient(to right, #F09819, #FF512F);
+	background: black;
+	background: -webkit-linear-gradient(to right, rgb(220, 220, 235), white);
+	background: linear-gradient(to right,white, white);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	color:bisque;
 
 }
 .lite{
@@ -37,8 +38,8 @@ li.dropdown:hover > .dropdown-menu {
 }
 .btn-primary:hover {
 	background-color:transparent;
-	border-color: #d6962c;
-	color: #d6962c;
+	border-color:white;
+	color: white;
 	border-radius: 20px;
 }
 
