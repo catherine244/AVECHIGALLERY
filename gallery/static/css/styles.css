@@ -13,7 +13,7 @@ li.dropdown:hover > .dropdown-menu {
     -webkit-transition: 1s;
     transition: 1s;
 }
-.clrd-font{
+.colored-font{
 	background: #FF512F;
 	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
 	background: linear-gradient(to right, #F09819, #FF512F);

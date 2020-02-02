@@ -14,7 +14,7 @@ function CopyFunction() {
                         {% if all_images%}
 
                         {% else %}
-                          <h2> Found 0 images for the search term {{message}}</h2>
+                          <h2> No Search categories found {{message}}</h2>
                         {% endif %}
                     
                       </div>
@@ -26,10 +26,10 @@ function CopyFunction() {
                     <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
                         <img src="{{image.image_path.url}}" alt="" >
                         <div class="portfolio_images_overlay text-center">
-                            <h6 class="clrd-font" >{{image.image_name}}</h6>
-                            <p class="clrd-font">{{ image.image_description }}</p>
+                            <h6 class="colored-font" >{{image.image_name}}</h6>
+                            <p class="colored-font">{{ image.image_description }}</p>
 
-                            <h6 class="clrd-font"><span style="color: #fff;">Location:</span>{{image.image_location}}</h6>
+                            <h6 class="colored-font"><span style="color: #fff;">Location:</span>{{image.image_location}}</h6>
                             
                             
                             <input type="text" id="imagelink" class="form-control input-sm" value="https://avechigallery.herokuapp.com{{image.image_path.url}}" class="hidden">
@@ -37,6 +37,8 @@ function CopyFunction() {
                                 <i class="fa fa-copy" style="color: #d6962c"></i> Copy Link
                             </button>
                             <a class="fancybox btn btn-primary" rel="gallery" href="{{image.image_path.url}}"><i  style="color:#d6962c" class="fa fa-eye"></i> View Image</a>
+                           
+                                <p class="colored-font">{{ image.image_download }}</p>
 
                         </div>
                         
