@@ -36,10 +36,10 @@ function CopyFunction() {
                             <p class="colored-font"> Location taken : {{image.image_location}}</p>
                              <p class="colored-font">Category : {{image.image_category}}</p>
                             
-                            <i href="#" class="fa fa-download" aria-hidden="true" Style="color:white">Download:{{ image.image_download }}</i>
+                            <i href="#" class="fa fa-download" aria-hidden="true" Style="color:white;margin-bottom:5%;">Download:{{ image.image_download }}</i>
                             <br>
                             
-                            <input type="text" id="imagelink" class="form-control input-sm" value="https://avechigallery.herokuapp.com{{image.image_path.url}}" class="hidden">
+                            <input type="text" id="imagelink" class="form-control input-sm" value="https://avechigallery.herokuapp.com{{image.image_path.url}}" class="hidden" style="display:none;">
                             <button class="btn btn-primary" onclick="CopyFunction()">
                                 <i class="fa fa-copy" style="color: #d6962c"></i> Copy Link
                             </button>
