@@ -16,6 +16,8 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
           <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
 
         <link rel="stylesheet" href="/static/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 <script type="text/javascript" src="/static/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
@@ -60,7 +62,7 @@
                   </main>
                 </div>
                 <!-- Footer -->
-  <footer class="page-footer font-small primary-color-dark mt-4 pt-4">
+  <footer class="page-footer font-small primary-color-dark bg-dark p-4">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright.
       <a href="https://github.com/catherine244"> Catherine</a>
@@ -73,6 +75,32 @@
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+              <script src="{% static 'js/owl.carousel.js' %}"></script>
+              <script src="{% static 'assets/owl.carousel.js' %}"></script>
+              <script>
+                $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    600: {
+                      items: 3
+                    },
+                    1000: {
+                      items: 5
+                    }
+                  },
+                  autoHeight: true,
+                  autoplay: true,
+                  autoplayTimeout: 4000,
+                  dots: true,
+                  nav: false,
+                  center: true,
+                })
+              </script>
 
     </body>
 </html>
