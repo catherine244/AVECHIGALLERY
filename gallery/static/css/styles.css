@@ -149,3 +149,11 @@ li.dropdown:hover > .dropdown-menu {
 		padding: 20px;
 	}
 }
+.owl-carousel {
+	padding: 60px;
+  }
+
+  img {
+	  padding: 20px;
+  }
+  
