@@ -61,10 +61,10 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .portfolio_images_overlay{
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 	background: rgba(0, 0, 0, 0.8);
-	padding: 20px;
+	padding: 10px;
 	margin: 0 auto;
 	top: -100%;
 	left: 5%;
@@ -74,15 +74,15 @@ li.dropdown:hover > .dropdown-menu {
 }
 .portfolio_images_overlay h6{
 	color: #fff;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
-	border: 2px solid #fff;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	border: 1px solid #fff;
+	padding-top: 2px;
+	padding-bottom: 5px;
 }
 
 .portfolio_images_overlay .product_price{
-	font-size: 35px;
+	font-size: 20px;
 	color: #fff;
 	font-weight:800;
 	line-height:30px;
